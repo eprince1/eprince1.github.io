@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      const jellysync = document.createElement('script');
+      jellysync.setAttribute('src', `https://cdn.jsdelivr.net/npm/jellysync/dist/module.min.js?v=${Date.now()}`);
+      document.head.appendChild(jellysync);
+      jellysync.onload = () => {
+        window.Jellysync.initialize('ffee21e4-379c-4714-99b2-3b5dbbeab203');
+      };
+    </script>
+  </head>
+  <body>
+    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+  </body>
+</html>
